@@ -9,7 +9,7 @@ class Router{
 
     load(app, folderName){
         if(!this.startFolder) this.startFolder = path.basename(folderName);
-        console.log('path.basename(folderName) это => ' + path.basename(folderName));
+        
         fs.readdirSync(folderName).forEach((file) => {
 
             const fullName = path.join(folderName, file);
